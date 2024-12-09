@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="IkiSayiToplama"/>
+        <attribute name="authors" value="Muhammed Sa&#287;lam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-09 10:42:15 &#214;S"/>
+        <attribute name="created" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0wOTsxMDozMjo1OSDDllM7NDExOQ=="/>
+        <attribute name="edited" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0wOTsxMDo0MjoxNSDDllM7MTs0MjIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sayi1" expression="0"/>
+            <assign variable="sayi2" expression="0"/>
+            <assign variable="sonuc" expression="0"/>
+            <output expression="&quot;Birinci sayiyi giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;ikinci sayiyi giriniz.&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <assign variable="sonuc" expression="sayi1+sayi2"/>
+            <output expression="&quot;Toplama sonucunuz: &quot;&amp;sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
