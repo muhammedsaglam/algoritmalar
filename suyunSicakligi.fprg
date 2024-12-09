@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="suyunSicakligi"/>
+        <attribute name="authors" value="Muhammed Sa&#287;lam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-09 11:02:47 &#214;S"/>
+        <attribute name="created" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0wOTsxMDo1NzozOCDDllM7NDEyMw=="/>
+        <attribute name="edited" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0wOTsxMTowMjo0NyDDllM7MTs0MjIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="suSicakligi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Suyun sicakligini giriniz&quot;" newline="True"/>
+            <input variable="suSicakligi"/>
+            <if expression="suSicakligi&gt;100">
+                <then>
+                    <output expression="&quot;Su gaz halindedir.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="suSicakligi&gt;0">
+                        <then>
+                            <output expression="&quot;Su s&#305;v&#305; haldedir.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Su kat&#305; haldedir.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
