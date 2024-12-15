@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="komisyonHesaplama"/>
+        <attribute name="authors" value="Muhammed Sa&#287;lam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-15 06:05:25 &#214;S"/>
+        <attribute name="created" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0xNTswNTo0NDozNSDDllM7NDExNw=="/>
+        <attribute name="edited" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0xNTswNjowNToyNSDDllM7MTs0MjIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fiyat, komisyon" type="Real" array="False" size=""/>
+            <assign variable="fiyat" expression="0"/>
+            <assign variable="komisyon" expression="0"/>
+            <output expression="&quot;Fiyat giriniz&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <if expression="fiyat&gt;5000">
+                <then>
+                    <assign variable="komisyon" expression="fiyat*0.01"/>
+                </then>
+                <else>
+                    <if expression="fiyat&gt;1000">
+                        <then>
+                            <assign variable="komisyon" expression="fiyat*0.03"/>
+                        </then>
+                        <else>
+                            <if expression="fiyat&gt;300">
+                                <then>
+                                    <assign variable="komisyon" expression="fiyat*0.04"/>
+                                </then>
+                                <else>
+                                    <assign variable="komisyon" expression="fiyat*0.05"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="fiyat&amp;&quot;  Tl nin komisyon tutari :&quot; &amp;komisyon" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
