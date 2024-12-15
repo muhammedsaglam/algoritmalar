@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kdvHesaplama"/>
+        <attribute name="authors" value="Muhammed Sa&#287;lam"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-15 05:41:07 &#214;S"/>
+        <attribute name="created" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0xNTswNTozMToxMyDDllM7NDEwOQ=="/>
+        <attribute name="edited" value="TXVoYW1tZWQgU2HEn2xhbTtERVNLVE9QLTFUQU41VUc7MjAyNC0xMi0xNTswNTo0MTowNyDDllM7MTs0MjIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fiyat, kdv, toplamTutar" type="Real" array="False" size=""/>
+            <assign variable="fiyat" expression="0"/>
+            <assign variable="kdv" expression="0"/>
+            <assign variable="toplamTutar" expression="0"/>
+            <output expression="&quot;Urun Fiyatini Giriniz&quot;" newline="True"/>
+            <input variable="fiyat"/>
+            <assign variable="kdv" expression="fiyat*20/100"/>
+            <assign variable="toplamTutar" expression="fiyat+kdv"/>
+            <output expression="fiyat &amp;&quot; kdv si &quot; &amp;kdv &amp;&quot; Toplam Tutari:&quot; &amp;toplamTutar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
